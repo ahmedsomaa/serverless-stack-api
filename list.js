@@ -1,10 +1,9 @@
 import handler from "./libs/handler-lib";
 import dynamoDb from "./libs/dynamodb-lib";
-import { RemoteCredentials } from "aws-sdk";
 
 export const main = handler(async (event, context) => {
     const params = {
-        TableName = process.env.tableName,
+        TableName : process.env.tableName,
         // 'KeyConditionExpression' defines the condition for the query
         // - 'userId = :userId': only return items with matching 'userId'
         //   partition key

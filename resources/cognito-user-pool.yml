@@ -25,4 +25,4 @@ Outputs:
 
   UserPoolClient:
     Value:
-      ref: CognitoUserPoolClient
+      Ref: CognitoUserPoolClient
